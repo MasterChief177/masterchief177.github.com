@@ -48,8 +48,8 @@
         /* Glassmorphism effect for the navbar */
         .glass-nav {
             background: rgba(17, 24, 39, 0.8);
-            backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -59,7 +59,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-fill-color: transparent;
         }
 
         /* Custom scrollbar */
@@ -106,15 +105,15 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="min-h-screen flex items-center justify-center text-center px-6">
+        <section id="hero" class="min-h-[80vh] flex items-center justify-center text-center px-6 pb-8">
             <div class="max-w-4xl">
                 <h1 class="text-5xl md:text-7xl font-black mb-4 leading-tight">
                     Hallo, ich bin <span class="gradient-text">Kristof Flajsz</span>
                 </h1>
-                <h2 class="text-2xl md:text-4xl font-semibold mb-8 text-slate-300">
+                <h2 class="text-2xl md:text-4xl font-semibold mb-6 text-slate-300">
                     Ich bin <span id="typing-text" class="font-bold gradient-text"></span><span class="typing-cursor">|</span>
                 </h2>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-slate-400">
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-slate-400">
                     Ein leidenschaftlicher IT-ler, der funktionale und ansprechende IT-infrastruktur shafft. Lass uns zusammen etwas Großartiges bauen.
                 </p>
                 <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
@@ -124,16 +123,16 @@
         </section>
 
         <!-- Profile Picture Section -->
-        <section id="profile-picture" class="py-20 md:py-32">
+        <section id="profile-picture" class="py-8">
             <div class="container mx-auto px-6">
                 <div class="fade-in-section text-center max-w-3xl mx-auto">
-                    <img src="assets/pictures/pfp.jpg" alt="Kristof Flajsz" class="rounded-full w-64 h-64 mx-auto mb-8 border-4 border-sky-500">
+                    <img src="assets/pictures/pfp.jpg" alt="Kristof Flajsz" class="rounded-full w-48 h-48 object-cover object-center mx-auto mb-6 border-4 border-sky-500">
                 </div>
             </div>
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="py-20 md:py-32">
+        <section id="about" class="py-12 md:py-16">
             <div class="container mx-auto px-6">
                 <div class="fade-in-section text-center max-w-3xl mx-auto">
                     <h2 class="text-4xl font-bold mb-4">Über Mich</h2>
@@ -166,13 +165,13 @@
                     
                     <div class="flex justify-center space-x-6 mt-12">
                         <!-- Replace # with your social media links -->
-                         <a href="#" class="text-slate-400 hover:text-white transition-colors duration-300">
+                         <a href="#" class="text-slate-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                         </a>
-                        <a href="#" class="text-slate-400 hover:text-white transition-colors duration-300">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors duration-300" aria-label="GitHub">
+                           <svg xmlns="https://github.com/MasterChief177" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         </a>
-                        <a href="#" class="text-slate-400 hover:text-white transition-colors duration-300">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                         </a>
                     </div>
