@@ -24,6 +24,52 @@
   gtag('config', 'G-XYXVCEYXT3');
 </script>
 
+<script>
+
+// dataLayer und gtag-Funktion definieren
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+ 
+// WICHTIG – NICHT KOPIEREN/EINFÜGEN, OHNE REGIONENLISTE ZU ÄNDERN
+
+// Standardeinwilligung für bestimmte Regionen entsprechend Ihren Anforderungen festlegen
+
+gtag('consent', 'default', {
+
+  'ad_storage': 'denied',
+
+  'ad_user_data': 'denied',
+
+  'ad_personalization': 'denied',
+
+  'analytics_storage': 'denied',
+
+ 'regions':[<Liste der ISO 3166-2-Codes der Regionen>]
+
+});
+
+// Standardeinwilligung für alle anderen Regionen entsprechend Ihren Anforderungen festlegen
+
+gtag('consent', 'default', {
+
+  'ad_storage': 'denied',
+
+  'ad_user_data': 'denied',
+
+  'ad_personalization': 'denied',
+
+  'analytics_storage': 'denied'
+
+});
+
+ 
+</script>
+
+<!--Banner-Script hier einfügen!--> 
+
     <title>Kristof Flajsz | Portfolio</title>
     
     <!-- Tailwind CSS for styling -->
