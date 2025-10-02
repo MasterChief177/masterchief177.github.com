@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ** EDIT THIS ** -->
+    <title>Projekt Detail | Kristof Flajsz</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS for animations and styling -->
+    <style>
+        /* Apply the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #E5E7EB; /* Light gray text */
+        }
+
+        /* Glassmorphism effect for the navbar */
+        .glass-nav {
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Gradient text effect */
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4B5563;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Navigation -->
+    <header id="header" class="sticky top-0 left-0 right-0 z-50 glass-nav">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Home</a></li>
+                <li><a href="project.html" class="hover:text-sky-400 transition-colors duration-300">Projekte</a></li>
+                <li><a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20 md:py-32">
+        <section id="project-detail" class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- ** EDIT THIS: Project Title ** -->
+                <h1 class="text-5xl font-bold mb-4 gradient-text">Projekt Titel</h1>
+                <div class="w-24 h-1 bg-sky-500 mb-8 rounded"></div>
+
+                <!-- ** EDIT THIS: Project Image ** -->
+                <img src="https://via.placeholder.com/800x400" alt="Projektbild" class="rounded-lg shadow-lg mb-8">
+
+                <!-- ** EDIT THIS: Project Description ** -->
+                <div class="space-y-6 text-slate-300">
+                    <p>
+                        Hier kommt eine detaillierte Beschreibung des Projekts. Du kannst über die Herausforderungen, die Lösungen und das Endergebnis schreiben.
+                        Dieser Abschnitt kann so lang sein, wie du möchtest.
+                    </p>
+                    <p>
+                        Weitere Absätze können hier hinzugefügt werden, um den Text zu strukturieren.
+                    </p>
+                </div>
+
+                <!-- ** EDIT THIS: Project Details ** -->
+                <div class="mt-12 bg-gray-800/50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-slate-100 mb-4">Projektdetails</h2>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><strong>Kunde:</strong> Dein Kunde</li>
+                        <li><strong>Datum:</strong> Oktober 2025</li>
+                        <li><strong>Technologien:</strong> HTML, CSS, JavaScript, Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="mt-12">
+                    <a href="project.html" class="inline-block bg-transparent border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
+                        Zurück zu den Projekten
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 py-6 mt-16">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Zurück zur Hauptseite</a>
+            <p class="mt-4">&copy; 2025 Kristof Flajsz. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
