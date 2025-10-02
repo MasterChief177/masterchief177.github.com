@@ -115,5 +115,32 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Mobile Menu Toggle ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            mobileMenu.addEventListener('click', (e) => {
+                if(e.target.tagName === 'A'){
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+            // Close mobile menu when clicking a main nav link too (for smooth scrolling)
+            document.querySelectorAll('#header nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if(!mobileMenu.classList.contains('hidden')){
+                        mobileMenu.classList.add('hidden');
+                     }
+                });
+            })
+
+        });
+    </script>
 </body>
 </html>
