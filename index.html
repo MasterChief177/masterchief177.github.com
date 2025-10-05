@@ -118,7 +118,7 @@
                     Hallo, ich bin <span class="gradient-text">Kristof Flajsz</span>
                 </h1>
                 <h2 class="text-2xl md:text-4xl font-semibold mb-6 text-slate-300">
-                    Ich bin ein <span id="typing-text" class="font-bold gradient-text"></span><span class="typing-cursor">|</span>
+                    Ich bin <span id="typing-text" class="font-bold gradient-text"></span><span class="typing-cursor">|</span>
                 </h2>
                 <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-slate-400">
                     Ein leidenschaftlicher IT-ler, der funktionale und ansprechende IT-infrastruktur schafft. Lass uns zusammen etwas Großartiges bauen.
@@ -147,7 +147,7 @@
                     <p class="text-lg text-slate-400 leading-relaxed mb-6">
                         Ich bin Kristof — Fachinformatiker für Systemintegration mit Fokus auf zuverlässige, skalierbare Infrastruktur und Automatisierung. Ich baue Lösungen, die im Alltag funktionieren: von Server- und Netzwerk-Setup über Containerisierung bis zu automatisierten Deployments. Wenn du eine robuste Infrastruktur oder Hilfe bei der Automatisierung brauchst, lass uns sprechen.
                     <p class="text-lg text-slate-400 leading-relaxed">
-                        Erwähne vielleicht deine wichtigsten Fähigkeiten oder die Art von Projekten, an denen du am liebsten arbeitest. Das Ziel ist, einen bleibenden Eindruck zu hinterlassen und Besucher neugierig auf deine Arbeit zu machen.
+                        <!-- Erwähne vielleicht deine wichtigsten Fähigkeiten oder die Art von Projekten, an denen du am liebsten arbeitest. Das Ziel ist, einen bleibenden Eindruck zu hinterlassen und Besucher neugierig auf deine Arbeit zu machen. -->
                     </p>
                 </div>
             </div>
@@ -201,7 +201,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             // --- Typing Animation ---
             const typingTextElement = document.getElementById('typing-text');
-            const words = ["IT-ler", "Kreativer Kopf", "Problemlöser", "Freund"];
+            const words = [
+                "ein IT-ler",
+                "ein Problemlöser",
+                "ein Freund",
+                "Kreativer Kopf",
+                "Neugierig",
+                "Lernbereit",
+            ];
             let wordIndex = 0;
             let charIndex = 0;
             let isDeleting = false;
