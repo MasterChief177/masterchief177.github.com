@@ -2,7 +2,7 @@
 
 This is the code repository for my personal portfolio website, where I showcase my projects and skills!
 
-Feel free to poke around the code—I encourage you to explore and see how everything works under the hood. 🧐
+Feel free to poke around the code. I encourage you to explore and see how everything works under the hood. 🧐
 
 ---
 
@@ -18,4 +18,5 @@ It’s been an incredible assistant throughout the development process, and I’
 
 While AI is a powerful tool, final quality is always a developer's responsibility!
 
-Before any commit is pushed to this repository, I rigorously test the code in a live environment to ensure every feature is working exactly the way I intend. You can be confident that the code you see here has been vetted and approved! 🚀
+Before any commit is pushed to this repository, **I rigorously test the code in a live environment to ensure every feature is working exactly the way I intend.** You can be confident that the code you see here has been vetted and approved! 🚀
+
