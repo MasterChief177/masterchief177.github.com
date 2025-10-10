@@ -111,9 +111,9 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
              <a href="#hero" class="block py-2 hover:text-sky-400 transition-colors duration-300">Home</a>
              <a href="#about" class="block py-2 hover:text-sky-400 transition-colors duration-300">About Me</a>
-             <a href="../project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
-             <a href="../impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Imprint</a>
-             <a href="../privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+             <a href="/en/project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
+             <a href="/en/impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Imprint</a>
+             <a href="/en/privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
         </div>
     </header>
 
@@ -198,8 +198,8 @@
     <!-- Footer -->
     <footer class="bg-gray-900/50 py-6">
         <div class="container mx-auto px-6 text-center text-slate-500">
-            <a href="../impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
-            <a href="../privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            <a href="/en/impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
+            <a href="/en/privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
             <p class="mt-2">&copy; 2025 Kristof Flajsz. All rights reserved.</p>
         </div>
     </footer>
@@ -294,25 +294,30 @@
 
             // --- Language Switcher ---
             const languageToggle = document.getElementById('language-toggle');
-            const currentPath = window.location.pathname;
 
             // Set toggle state based on current language
-            if (currentPath.includes('/en/')) {
+            if (window.location.pathname.startsWith('/en')) {
                 languageToggle.checked = true;
             }
 
             languageToggle.addEventListener('change', function() {
+                const url = new URL(window.location.href);
                 if (this.checked) {
                     // Switch to English
-                    if (!currentPath.includes('/en/')) {
-                        window.location.href = '/en' + currentPath;
+                    if (!url.pathname.startsWith('/en')) {
+                        if (url.pathname === '/') {
+                            url.pathname = '/en';
+                        } else {
+                            url.pathname = '/en' + url.pathname;
+                        }
                     }
                 } else {
                     // Switch to German
-                    if (currentPath.includes('/en/')) {
-                        window.location.href = currentPath.replace('/en', '');
+                    if (url.pathname.startsWith('/en')) {
+                        url.pathname = url.pathname.substring(3) || '/';
                     }
                 }
+                window.location.href = url.href;
             });
         });
     </script>
