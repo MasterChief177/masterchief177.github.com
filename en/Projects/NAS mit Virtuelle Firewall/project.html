@@ -135,25 +135,30 @@
         document.addEventListener('DOMContentLoaded', function() {
             // --- Language Switcher ---
             const languageToggle = document.getElementById('language-toggle');
-            const currentPath = window.location.pathname;
 
             // Set toggle state based on current language
-            if (currentPath.includes('/en/')) {
+            if (window.location.pathname.startsWith('/en')) {
                 languageToggle.checked = true;
             }
 
             languageToggle.addEventListener('change', function() {
+                const url = new URL(window.location.href);
                 if (this.checked) {
                     // Switch to English
-                    if (!currentPath.includes('/en/')) {
-                        window.location.href = '/en' + currentPath;
+                    if (!url.pathname.startsWith('/en')) {
+                        if (url.pathname === '/') {
+                            url.pathname = '/en';
+                        } else {
+                            url.pathname = '/en' + url.pathname;
+                        }
                     }
                 } else {
                     // Switch to German
-                    if (currentPath.includes('/en/')) {
-                        window.location.href = currentPath.replace('/en', '');
+                    if (url.pathname.startsWith('/en')) {
+                        url.pathname = url.pathname.substring(3) || '/';
                     }
                 }
+                window.location.href = url.href;
             });
         });
     </script>
