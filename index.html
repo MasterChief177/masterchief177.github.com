@@ -97,7 +97,7 @@
             <div class="flex items-center">
                 <span class="text-sm font-medium text-gray-300">DE</span>
                 <label for="language-toggle" class="relative inline-flex items-center cursor-pointer mx-2">
-                    <input type="checkbox" id="language-toggle" class="sr-only peer">
+                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Toggle language between German and English">
                     <div class="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
                 </label>
                 <span class="text-sm font-medium text-gray-300">EN</span>
@@ -205,6 +205,7 @@
     </footer>
 
 
+    <script src="js/language-toggle.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // --- Typing Animation ---
@@ -293,27 +294,7 @@
             })
 
             // --- Language Switcher ---
-            const languageToggle = document.getElementById('language-toggle');
-            const currentPath = window.location.pathname;
-
-            // Set toggle state based on current language
-            if (currentPath.includes('/en/')) {
-                languageToggle.checked = true;
-            }
-
-            languageToggle.addEventListener('change', function() {
-                if (this.checked) {
-                    // Switch to English
-                    if (!currentPath.includes('/en/')) {
-                        window.location.href = '/en' + currentPath;
-                    }
-                } else {
-                    // Switch to German
-                    if (currentPath.includes('/en/')) {
-                        window.location.href = currentPath.replace('/en', '');
-                    }
-                }
-            });
+            initializeLanguageToggle();
         });
     </script>
 </body>
