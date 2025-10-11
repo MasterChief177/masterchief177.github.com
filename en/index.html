@@ -16,69 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS for animations and styling -->
-    <style>
-        /* Apply the Inter font family */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827; 
-            color: #E5E7EB; 
-        }
-
-        /* Styling for the typing cursor */
-        .typing-cursor {
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        /* Fade-in animation for elements on scroll */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-            will-change: opacity, transform;
-        }
-
-        .is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Glassmorphism effect for the navbar */
-        .glass-nav {
-            background: rgba(17, 24, 39, 0.8);
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        /* Gradient text effect */
-        .gradient-text {
-            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #111827;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #374151;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #4B5563;
-        }
-    </style>
+    <!-- Shared CSS for common styles -->
+    <link rel="stylesheet" href="/assets/css/shared.css">
 
 </head>
 <body class="antialiased">
@@ -111,9 +50,9 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
              <a href="#hero" class="block py-2 hover:text-sky-400 transition-colors duration-300">Home</a>
              <a href="#about" class="block py-2 hover:text-sky-400 transition-colors duration-300">About Me</a>
-             <a href="/en/project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
-             <a href="/en/impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Imprint</a>
-             <a href="/en/privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+             <a href="project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
+             <a href="impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Imprint</a>
+             <a href="privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
         </div>
     </header>
 
@@ -198,8 +137,8 @@
     <!-- Footer -->
     <footer class="bg-gray-900/50 py-6">
         <div class="container mx-auto px-6 text-center text-slate-500">
-            <a href="/en/impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
-            <a href="/en/privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            <a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
+            <a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
             <p class="mt-2">&copy; 2025 Kristof Flajsz. All rights reserved.</p>
         </div>
     </footer>

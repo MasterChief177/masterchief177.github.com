@@ -7,10 +7,12 @@
 function createLanguageToggleHandler() {
     return function() {
         const currentPath = window.location.pathname;
+        const currentSearch = window.location.search;
+        const currentHash = window.location.hash;
         const pathSegments = currentPath.split('/').filter(segment => segment !== '');
         
         // Check if we're currently on an English page
-        const isCurrentlyEnglish = pathSegments.includes('en');
+        const isCurrentlyEnglish = pathSegments[0] === 'en';
         
         let newPath;
         
@@ -19,8 +21,7 @@ function createLanguageToggleHandler() {
             newPath = '/en/' + pathSegments.join('/');
         } else if (!this.checked && isCurrentlyEnglish) {
             // Switch to German - remove 'en' segment
-            const filteredSegments = pathSegments.filter(segment => segment !== 'en');
-            newPath = '/' + filteredSegments.join('/');
+            newPath = '/' + pathSegments.slice(1).join('/');
         } else {
             // No change needed
             return;
@@ -35,17 +36,13 @@ function createLanguageToggleHandler() {
             newPath = '/index.html';
         }
         
-        // Debug logging
-        console.log('Language toggle:', {
-            currentPath: currentPath,
-            pathSegments: pathSegments,
-            isCurrentlyEnglish: isCurrentlyEnglish,
-            newPath: newPath,
-            toggleChecked: this.checked
-        });
+        // Construct the complete URL with search and hash
+        const newUrl = newPath + currentSearch + currentHash;
         
-        // Navigate to the new URL
-        window.location.href = newPath;
+
+        
+        // Navigate to the new URL with preserved search and hash
+        window.location.href = newUrl;
     };
 }
 
@@ -55,7 +52,7 @@ function initializeLanguageToggle() {
     
     // Set initial state based on current language
     const pathSegments = window.location.pathname.split('/').filter(segment => segment !== '');
-    const isEnglish = pathSegments.includes('en');
+    const isEnglish = pathSegments[0] === 'en';
     
     languageToggle.checked = isEnglish;
     
