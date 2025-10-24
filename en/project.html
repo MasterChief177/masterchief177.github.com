@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekte | Kristof Flajsz</title>
+    <title>Projects | Kristof Flajsz</title>
     
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     
     <!-- Shared CSS for common styles -->
-    <link rel="stylesheet" href="assets/css/shared.css">
+    <link rel="stylesheet" href="../assets/css/shared.css">
 </head>
 <body class="antialiased">
 
@@ -23,14 +23,14 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <ul class="hidden md:flex items-center space-x-8">
                 <li><a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Home</a></li>
-                <li><a href="project.html" class="hover:text-sky-400 transition-colors duration-300">Projekte</a></li>
-                <li><a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Impressum</a></li>
-                <li><a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Datenschutzerklärung</a></li>
+                <li><a href="project.html" class="hover:text-sky-400 transition-colors duration-300">Projects</a></li>
+                <li><a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a></li>
+                <li><a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a></li>
             </ul>
             <div class="flex items-center">
                 <span class="text-sm font-medium text-gray-300">DE</span>
                 <label for="language-toggle" class="relative inline-flex items-center cursor-pointer mx-2">
-                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Toggle language: German / English">
+                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Switch language to German">
                     <div class="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
                 </label>
                 <span class="text-sm font-medium text-gray-300">EN</span>
@@ -39,12 +39,13 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
+        <!-- Mobile Menu todo: Implement Projekte -->
          
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
              <a href="index.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Home</a>
-             <a href="project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projekte</a>
-             <a href="impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Impressum</a>
-             <a href="privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Datenschutzerklärung</a>
+             <a href="project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
+             <a href="impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Imprint</a>
+             <a href="privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
         </div>
     </header>
 
@@ -52,27 +53,29 @@
     <main class="py-20 md:py-32">
         <section id="projects" class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto">
-                <h1 class="text-4xl font-bold mb-4 gradient-text">Meine Projekte</h1>
+                <h1 class="text-4xl font-bold mb-4 gradient-text">My Projects</h1>
                 <div class="w-24 h-1 bg-sky-500 mb-8 rounded"></div>
                 
                 <div class="space-y-12">
+                    
+                    <!-- Project Entry 1 -->
                     <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-2xl font-semibold text-slate-100 mb-2">NAS mit Virtueller Firewall</h2>
+                        <h2 class="text-2xl font-semibold text-slate-100 mb-2">Creation of a virtual firewall using a NAS</h2>
                         <p class="text-slate-400 mb-4">
-                            Erstellung einer virtuellen Firewall auf einem NAS-System zur Erhöhung der Netzwerksicherheit.
+                            In this project, I set up a virtual firewall on a NAS platform to improve network security. The firewall was configured to monitor and control incoming and outgoing traffic, preventing unwanted access.
                         </p>
-                        <a href="/Projects/NAS mit Virtuelle Firewall/project.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-300">
-                            Mehr erfahren
+                        <a href="Projects/NAS mit Virtuelle Firewall/project.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-300">
+                            Learn more
                         </a>
                     </div>
 
                     <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg">
                         <h2 class="text-2xl font-semibold text-slate-100 mb-2">Vivaldi Browser Ad Blocker</h2>
                         <p class="text-slate-400 mb-4">
-                            In diesem Projekt habe ich eine Ad-Blocker-Liste für den Vivaldi-Browser erstellt, um die Benutzererfahrung zu verbessern und unerwünschte Werbung zu blockieren.
+                            In this project, I created an ad blocker list for the Vivaldi browser to improve the user experience and block unwanted advertising.
                         </p>
-                        <a href="/Projects/Vivaldi_Browser_AdBlocker_lists/vivaldi.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-300">
-                            Mehr erfahren
+                        <a href="Projects/Vivaldi_Browser_AdBlocker_lists/vivaldi.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-300">
+                            Learn more
                         </a>
                     </div>
 
@@ -84,14 +87,14 @@
     <!-- Footer -->
     <footer class="bg-gray-900/50 py-6 mt-16">
         <div class="container mx-auto px-6 text-center text-slate-500">
-            <a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Zurück zur Hauptseite</a>
-            <a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Impressum</a>
-            <a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Datenschutzerklärung</a>
-            <p class="mt-4">&copy; 2025 Kristof Flajsz. Alle Rechte vorbehalten.</p>
+            <a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Back to main page</a>
+            <a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
+            <a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            <p class="mt-4">&copy; 2025 Kristof Flajsz. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/language-toggle.js"></script>
+    <script src="../js/language-toggle.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // --- Mobile Menu Toggle ---

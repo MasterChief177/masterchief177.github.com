@@ -55,7 +55,7 @@
                 <h1 class="text-4xl font-bold mb-4 gradient-text">Privacy Policy</h1>
                 <div class="w-24 h-1 bg-sky-500 mb-8 rounded"></div>
                 
-                <div class="space-y-6 text-slate-300 content-typography">
+                <div class="space-y-6 text-slate-300">
 
                 <p>Status: October 2, 2025</p><h2>Table of Contents</h2>
                  <ul class="index">
@@ -65,7 +65,6 @@
                     <li><a class="index-link" href="#m27">Security measures</a></li>
                     <li><a class="index-link" href="#m10">Rights of data subjects</a></li>
                     <li><a class="index-link" href="#m182">Contact and request management</a></li>
-                    <li><a class="index-link" href="#performance">Performance Monitoring (Cloudflare RUM)</a></li>
                 </ul><h2 id="m3">Controller</h2><p>Kristof Flajsz<br>Schulstraße. 21<br>83395, Freilassing, Germany</p>
 <p>E-mail address: <a href="mailto:kristof.flajsz@outlook.com">kristof.flajsz@outlook.com</a></p>
 
@@ -81,10 +80,7 @@
 
 <h2 id="m182">Contact and request management</h2><p>When contacting us (e.g. by post, contact form, e-mail, telephone or via social media) and in the context of existing user and business relationships, the details of the inquiring persons are processed insofar as this is necessary to answer the contact inquiries and any requested measures.</p>
 <ul class="m-elements"><li><strong>Processed data types:</strong> Inventory data (e.g. full name, home address, contact information, customer number, etc.); contact data (e.g. postal and e-mail addresses or telephone numbers); content data (e.g. textual or pictorial messages and posts as well as the information they contain, such as information on authorship or time of creation); usage data (e.g. page views and length of stay, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions). Meta, communication and process data (e.g. IP addresses, time data, identification numbers, persons involved).</li><li><strong>Data subjects:</strong> Communication partners.</li><li><strong>Purposes of processing:</strong> Communication; organizational and administrative procedures; feedback (e.g. collecting feedback via online form). Provision of our online offer and user-friendliness.</li><li><strong>Storage and deletion:</strong> Deletion according to the information in the section "General information on data storage and deletion".</li><li class=""><strong>Legal basis:</strong> Legitimate interests (Art. 6 para. 1 sentence 1 lit. f) GDPR). Performance of a contract and pre-contractual inquiries (Art. 6 para. 1 sentence 1 lit. b) GDPR).</li></ul><p><strong>Further information on processing processes, procedures and services:</strong></p><ul class="m-elements"><li><strong>Contact form: </strong>When you contact us via our contact form, by e-mail or other communication channels, we process the personal data you provide us with in order to answer and process your request. This generally includes information such as your name, contact information and, if applicable, other information that you provide to us and that is necessary for proper processing. We use this data exclusively for the intended purpose... [truncated]
-        <h2 id="performance">Performance Monitoring (Cloudflare RUM)</h2>
-        <p>Our website uses the Real User Measurement (RUM) service from Cloudflare to monitor website performance and improve the user experience. The collected data is anonymized and does not contain personal information. Cloudflare may process this data according to its privacy policy: https://www.cloudflare.com/privacypolicy/</p>
-
-        <p class="seal"><a href="https://datenschutz-generator.de/" title="Legal text from Dr. Schwenke - please click for more information." target="_blank" rel="noopener noreferrer nofollow">Created with free data protection generator.de by Dr. Thomas Schwenke</a></p>
+<p class="seal"><a href="https://datenschutz-generator.de/" title="Legal text from Dr. Schwenke - please click for more information." target="_blank" rel="noopener noreferrer nofollow">Created with free data protection generator.de by Dr. Thomas Schwenke</a></p>
                 </div>
             </div>
         </section>
@@ -128,19 +124,7 @@
 
             // --- Language Switcher ---
             initializeLanguageToggle();
-
-            // Make Cloudflare privacy URL clickable and highlighted
-            const cfUrl = 'https://www.cloudflare.com/privacypolicy/';
-            document.querySelectorAll('p').forEach(p => {
-                if (p.textContent.includes(cfUrl)) {
-                    p.innerHTML = p.innerHTML.replace(
-                        cfUrl,
-                        `<a href="${cfUrl}" target="_blank" rel="noopener noreferrer" class="text-sky-400 underline underline-offset-4 decoration-sky-500 decoration-2 font-medium bg-sky-500/10 px-1 py-0.5 rounded hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-500">${cfUrl}</a>`
-                    );
-                }
-            });
         });
     </script>
 </body>
 </html>
-

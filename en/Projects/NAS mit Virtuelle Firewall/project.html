@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ** EDIT THIS ** -->
+    <title>Creation of a Virtual Firewall on a NAS System (Proof of Concept) | Kristof Flajsz</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Shared CSS for common styles -->
+    <link rel="stylesheet" href="../../../assets/css/shared.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header Navigation -->
+    <header id="header" class="sticky top-0 left-0 right-0 z-50 glass-nav">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="../../index.html" class="hover:text-sky-400 transition-colors duration-300">Home</a></li>
+                <li><a href="../../project.html" class="hover:text-sky-400 transition-colors duration-300">Projects</a></li>
+                <li><a href="../../impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a></li>
+                <li><a href="../../privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a></li>
+            </ul>
+            <div class="flex items-center">
+                <span class="text-sm font-medium text-gray-300">DE</span>
+                <label for="language-toggle" class="relative inline-flex items-center cursor-pointer mx-2">
+                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Switch language to German">
+                    <div class="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
+                </label>
+                <span class="text-sm font-medium text-gray-300">EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20 md:py-32">
+        <section id="project-detail" class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- ** EDIT THIS: Project Title ** -->
+                <h1 class="text-5xl font-bold mb-4 gradient-text">Creation of a Virtual Firewall on a NAS System (Proof of Concept)</h1>
+                <div class="w-24 h-1 bg-sky-500 mb-8 rounded"></div>
+
+                <!-- ** EDIT THIS: Project Image ** -->
+                <img src="../../../assets/pictures/Gemini_Generated_Image_virtual_firewall.png" alt="Project Image" class="rounded-lg shadow-lg mb-8">
+
+                <!-- ** EDIT THIS: Project Description ** -->
+                <div class="space-y-6 text-slate-300">
+                    <p><strong>Project Goal:</strong> Cost- and resource-efficient implementation of a Sophos XG firewall as a virtual machine on an existing NAS system to significantly increase network security.</p>
+                    <p><strong>1. The Challenge & The Goal:</strong> The primary challenge was to establish a fully functional enterprise-class network security solution without having to purchase additional physical hardware (such as a dedicated firewall router). The main goal was the development and successful implementation of a zero-cost solution using existing NAS hardware and virtualization to separate the internal (LAN) and external (WAN) network via a single physical network port.</p>
+                    <p><strong>2. My Role & Impact (Highlighting Diversity):</strong> In this project, I acted as a system integrator and network architect. My focus was on solving the central configuration challenge, namely the mapping of two network zones (WAN and LAN) to a single physical port of the NAS system.</p>
+                    <p><strong>Network Design and Virtualization:</strong> I implemented complex virtual bridging (for the internal LAN) and a NAT interface (for the WAN/Internet connection). This innovative network masking was crucial to meet the requirements of the virtual firewall.</p>
+                    <p><strong>System Integration and Configuration:</strong> I was responsible for the installation of the Sophos XG Firewall VM and the precise assignment of the virtual interfaces in the hypervisor and then in the firewall operating system.</p>
+                    <p><strong>Problem Solving and Validation:</strong> The project demonstrates my ability to overcome restrictive hardware environments (single-port NAS) through creative software and virtualization solutions, thus creating a fully functional security barrier.</p>
+                </div>
+
+                <!-- ** EDIT THIS: Project Details ** -->
+                <div class="mt-12 bg-gray-800/50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-slate-100 mb-4">Core Skills & Technologies</h2>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><strong>Software:</strong> Sophos XG Firewall</li>
+                        <li><strong>Technologies:</strong> Virtualization</li>
+                        <li><strong>Network-Design:</strong> Bridging, NAT, WAN/LAN-Separation</li>
+                        <li><strong>NAS System Administration:</strong> Experience in the administration and configuration of NAS systems</li>
+                        <li><strong>Problem Solving & System Integration:</strong> Ability to integrate complex systems and solve problems efficiently</li>
+                        <li><strong>IT Security:</strong> Knowledge of network security practices and protocols</li>
+                        <li><strong>Date:</strong> September 19, 2024</li>
+                    </ul>
+                </div>
+
+                <div class="mt-12">
+                    <a href="../../project.html" class="inline-block bg-transparent border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
+                        Back to Projects
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 py-6 mt-16">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <a href="../../index.html" class="hover:text-sky-400 transition-colors duration-300">Back to main page</a>
+            <a href="../../impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
+            <a href="../../privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            <p class="mt-4">&copy; 2025 Kristof Flajsz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../js/language-toggle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeLanguageToggle();
+        });
+    </script>
+</body>
+</html>

@@ -13,47 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS for animations and styling -->
-    <style>
-        /* Apply the Inter font family */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827; /* Dark blue-gray background */
-            color: #E5E7EB; /* Light gray text */
-        }
-
-        /* Glassmorphism effect for the navbar */
-        .glass-nav {
-            background: rgba(17, 24, 39, 0.8);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        /* Gradient text effect */
-        .gradient-text {
-            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-        }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #111827;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #374151;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #4B5563;
-        }
-    </style>
+    <!-- Shared CSS for common styles -->
+    <link rel="stylesheet" href="assets/css/shared.css">
 </head>
 <body class="antialiased">
 
@@ -62,8 +23,17 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <ul class="hidden md:flex items-center space-x-8">
                 <li><a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Home</a></li>
+                <li><a href="project.html" class="hover:text-sky-400 transition-colors duration-300">Projekte</a></li>
                 <li><a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Impressum</a></li>
             </ul>
+            <div class="flex items-center">
+                <span class="text-sm font-medium text-gray-300">DE</span>
+                <label for="language-toggle" class="relative inline-flex items-center cursor-pointer mx-2">
+                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Toggle language: German/English">
+                    <div class="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
+                </label>
+                <span class="text-sm font-medium text-gray-300">EN</span>
+            </div>
              <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
@@ -71,6 +41,7 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
              <a href="index.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Home</a>
+             <a href="project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projekte</a>
              <a href="impressum.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Impressum</a>
         </div>
     </header>
@@ -114,10 +85,12 @@
         <div class="container mx-auto px-6 text-center text-slate-500">
             <a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Zurück zur Hauptseite</a>
             <a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Impressum</a>
+            <a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Datenschutzerklärung</a>
             <p class="mt-4">&copy; 2025 Kristof Flajsz. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
+    <script src="js/language-toggle.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // --- Mobile Menu Toggle ---
@@ -143,8 +116,6 @@
                 });
             })
 
-<<<<<<< Updated upstream
-=======
             // --- Language Switcher ---
             const languageToggle = document.getElementById('language-toggle');
 
@@ -156,6 +127,7 @@
             // --- Language Switcher ---
             initializeLanguageToggle();
 
+
             // Make Cloudflare privacy URL clickable if it appears as plain text
             const cfUrl = 'https://www.cloudflare.com/privacypolicy/';
             document.querySelectorAll('p').forEach(p => {
@@ -166,7 +138,7 @@
                     );
                 }
             });
->>>>>>> Stashed changes
+
         });
     </script>
 </body>

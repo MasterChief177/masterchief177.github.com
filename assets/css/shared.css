@@ -7,38 +7,6 @@ body {
     color: #E5E7EB; 
 }
 
-/* Typography polish for privacy page */
-#privacy .content-typography {
-    line-height: 1.7;
-}
-#privacy .content-typography h1,
-#privacy .content-typography h2,
-#privacy .content-typography h3,
-#privacy .content-typography h4 {
-    line-height: 1.25;
-    font-weight: 700;
-    color: #F3F4F6;
-}
-#privacy .content-typography h1 { margin: 1.5rem 0 0.75rem; font-size: 1.875rem; }
-#privacy .content-typography h2 { margin: 1.25rem 0 0.5rem;  font-size: 1.5rem; }
-#privacy .content-typography h3 { margin: 1rem 0 0.5rem;     font-size: 1.25rem; }
-#privacy .content-typography h4 { margin: 0.75rem 0 0.5rem;  font-size: 1.125rem; }
-
-/* Ensure space between headings and following text */
-#privacy .content-typography h1 + p,
-#privacy .content-typography h2 + p,
-#privacy .content-typography h3 + p,
-#privacy .content-typography h4 + p { margin-top: 0.25rem; }
-
-/* Lists readability */
-#privacy .content-typography ul,
-#privacy .content-typography ol { margin: 0.5rem 0 0.75rem 1.25rem; }
-#privacy .content-typography li { margin: 0.25rem 0; }
-
-/* Links default for legal text */
-#privacy .content-typography a { color: #38bdf8; text-decoration: underline; }
-#privacy .content-typography a:hover { color: #7dd3fc; }
-
 /* Styling for the typing cursor */
 .typing-cursor {
     animation: blink 0.7s infinite;
