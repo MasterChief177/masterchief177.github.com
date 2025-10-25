@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprint | Kristof Flajsz</title>
-    
+
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+
     <!-- Shared CSS for common styles -->
     <link rel="stylesheet" href="../assets/css/shared.css">
 </head>
@@ -29,56 +29,153 @@
             <div class="flex items-center">
                 <span class="text-sm font-medium text-gray-300">DE</span>
                 <label for="language-toggle" class="relative inline-flex items-center cursor-pointer mx-2">
-                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Toggle language between German and English">
+                    <input type="checkbox" id="language-toggle" class="sr-only peer" aria-label="Switch language to German">
                     <div class="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
                 </label>
                 <span class="text-sm font-medium text-gray-300">EN</span>
             </div>
-             <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
             </button>
         </nav>
-        
-         
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-             <a href="index.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Home</a>
-             <a href="project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
-             <a href="privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            <a href="index.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Home</a>
+            <a href="project.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Projects</a>
+            <a href="privacy.html" class="block py-2 hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="py-20 md:py-32">
-        <section id="impressum" class="container mx-auto px-6">
+        <section id="imprint" class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto">
                 <h1 class="text-4xl font-bold mb-4 gradient-text">Imprint</h1>
-                <div class="w-24 h-1 bg-sky-500 mb-8 rounded"></div>
-                
-                <div class="space-y-6 text-slate-300">
-                    <h2 class="text-2xl font-semibold text-slate-100">Information according to § 5 DDG</h2>
-                    <p>Kristof Flajsz<br>
-                       Schulstraße. 21<br>
-                       83395 Freilassing<br>
-                       Represented by:
-                       Kristof Flajsz</p>
+                <div class="w-24 h-1 bg-sky-500 mb-12 rounded"></div>
 
-                    <h2 class="text-2xl font-semibold text-slate-100 mt-8">Contact</h2>
-                    <p>Phone: +4917632232179<br>
-                       E-Mail: kristof.flajsz@outlook.com</p>
+                <div class="space-y-12 text-slate-300">
+                    <article class="space-y-12">
+                        <header class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-xl shadow-black/20 space-y-4">
+                            <p class="text-sm font-medium uppercase tracking-[0.2em] text-sky-300/80">Effective as of: October 25, 2025</p>
+                            <p class="text-base leading-relaxed text-slate-400">
+                                This imprint provides information about the provider, contact channels, and the legal notices that apply to this
+                                online presence, including liability, copyright, and data-protection statements.
+                            </p>
+                        </header>
 
-                    <h2 class="text-2xl font-semibold text-slate-100 mt-8">Disclaimer</h2>
-                    <p>Liability for content
-                        The contents of our pages were created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to Section 7 (1) DDG. According to §§ 8 to 10 DDG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general legislation remain unaffected by this. However, liability in this respect is only possible from the time of knowledge of a concrete infringement. If we become aware of any such infringements, we will remove this content immediately.</p>
-                    
-                    <h3 class="text-xl font-semibold text-slate-200 mt-6">Liability for links</h3>
-                    <p>Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognizable at the time of linking. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any legal infringements, we will remove such links immediately.</p>
+                        <nav aria-label="Table of contents" class="rounded-2xl border border-slate-800/70 bg-slate-900/40 p-8 shadow-lg shadow-black/10">
+                            <h2 class="flex items-center gap-3 text-xl font-semibold text-white">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-sky-500/10 text-sm font-bold text-sky-400">I</span>
+                                Table of Contents
+                            </h2>
+                            <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+                                <li><a class="block rounded-lg border border-transparent bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-sky-400/60 hover:bg-slate-900/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500" href="#provider">Provider &amp; Responsible Person</a></li>
+                                <li><a class="block rounded-lg border border-transparent bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-sky-400/60 hover:bg-slate-900/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500" href="#contact">Contact</a></li>
+                                <li><a class="block rounded-lg border border-transparent bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-sky-400/60 hover:bg-slate-900/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500" href="#disclaimer">Disclaimer</a></li>
+                                <li><a class="block rounded-lg border border-transparent bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-sky-400/60 hover:bg-slate-900/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500" href="#links">Liability for Links</a></li>
+                                <li><a class="block rounded-lg border border-transparent bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-sky-400/60 hover:bg-slate-900/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500" href="#copyright">Copyright</a></li>
+                                <li><a class="block rounded-lg border border-transparent bg-slate-900/30 px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-sky-400/60 hover:bg-slate-900/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500" href="#data-protection">Data Protection</a></li>
+                            </ul>
+                        </nav>
 
-                    <h3 class="text-xl font-semibold text-slate-200 mt-6">Copyright</h3>
-                    <p>The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any legal infringements, we will remove such content immediately.</p>
+                        <section id="provider" class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-lg shadow-black/10 space-y-5">
+                            <h2 class="text-2xl font-semibold text-white">Provider &amp; Responsible Person</h2>
+                            <p class="text-sm font-semibold uppercase tracking-widest text-sky-300/80">Information pursuant to Section 5 DDG</p>
+                            <div class="grid gap-6 md:grid-cols-2">
+                                <div class="space-y-2">
+                                    <p class="leading-relaxed">
+                                        Kristof Flajsz<br>
+                                        Schulstraße 21<br>
+                                        83395 Freilassing<br>
+                                        Germany
+                                    </p>
+                                </div>
+                                <div class="space-y-2">
+                                    <p class="leading-relaxed text-slate-400">
+                                        Responsible within the meaning of the DDG and Section 18(2) MStV:<br>
+                                        <span class="text-slate-100">Kristof Flajsz</span>
+                                    </p>
+                                    <p class="leading-relaxed text-slate-400">
+                                        VAT identification number pursuant to Section 27a UStG: not applicable.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
 
-                    <h3 class="text-xl font-semibold text-slate-200 mt-6">Data protection</h3>
-                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent. We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) can have security gaps. Complete protection of data against access by third parties is not possible. The use of contact data published within the scope of the imprint obligation by third parties for sending unsolicited advertising and information material is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information, such as spam e-mails.</p>
-                
+                        <section id="contact" class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-lg shadow-black/10 space-y-5">
+                            <h2 class="text-2xl font-semibold text-white">Contact</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                Please use the following channels for all enquiries and legal notices:
+                            </p>
+                            <ul class="space-y-3 text-slate-200">
+                                <li><span class="font-semibold text-slate-100">Phone:</span> <a class="text-sky-400 hover:text-sky-300 transition" href="tel:+4917632232179">+49 176 32232179</a></li>
+                                <li><span class="font-semibold text-slate-100">Email:</span> <a class="text-sky-400 hover:text-sky-300 transition" href="mailto:kristof.flajsz@outlook.com">kristof.flajsz@outlook.com</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="disclaimer" class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-lg shadow-black/10 space-y-5">
+                            <h2 class="text-2xl font-semibold text-white">Disclaimer</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                The content of this website has been created with great care. Nevertheless, we cannot guarantee accuracy, completeness, or timeliness.
+                                As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to
+                                Section 7(1) DDG. Under Sections 8 to 10 DDG, however, we are not obliged to monitor transmitted or stored third-party information
+                                or to investigate circumstances indicating illegal activity.
+                            </p>
+                            <p class="leading-relaxed text-slate-400">
+                                Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect is only
+                                possible from the time we become aware of a specific infringement. As soon as we become aware of such infringements, we will
+                                remove the content without delay.
+                            </p>
+                        </section>
+
+                        <section id="links" class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-lg shadow-black/10 space-y-5">
+                            <h2 class="text-2xl font-semibold text-white">Liability for Links</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                Our offer contains links to external third-party websites whose content we cannot control. Therefore, we cannot accept any liability for
+                                such external content. The respective provider or operator is always responsible for the content of linked pages. The linked pages were
+                                checked for possible legal violations at the time of linking; unlawful content was not apparent at that time.
+                            </p>
+                            <p class="leading-relaxed text-slate-400">
+                                Permanent monitoring of the linked pages is unreasonable without specific evidence of a violation. We will remove such links immediately
+                                upon becoming aware of legal infringements.
+                            </p>
+                        </section>
+
+                        <section id="copyright" class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-lg shadow-black/10 space-y-5">
+                            <h2 class="text-2xl font-semibold text-white">Copyright</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                The content and works created by the site operators are subject to German copyright law. Reproduction, editing, distribution, or any kind
+                                of utilisation outside the limits of copyright law requires the written consent of the respective author or creator. Downloads and copies
+                                of this site are permitted only for private, non-commercial use.
+                            </p>
+                            <p class="leading-relaxed text-slate-400">
+                                Where content on this site was not created by the operator, the copyrights of third parties are respected and such content is labelled
+                                accordingly. Should you nevertheless become aware of a copyright infringement, please notify us. Upon notification of legal infringements,
+                                we will remove the relevant content immediately.
+                            </p>
+                        </section>
+
+                        <section id="data-protection" class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-lg shadow-black/10 space-y-5">
+                            <h2 class="text-2xl font-semibold text-white">Data Protection</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                Using our website is generally possible without providing personal data. Where personal data (such as name, address, or email addresses)
+                                is collected on our pages, this is always done on a voluntary basis if possible. We will not disclose this data to third parties without
+                                your explicit consent.
+                            </p>
+                            <p class="leading-relaxed text-slate-400">
+                                We point out that data transmission on the internet (e.g. communication by email) may have security gaps. Complete protection of data against
+                                access by third parties is impossible. The use of contact details published within the scope of the imprint obligation for sending
+                                unsolicited advertising and information material is hereby expressly prohibited. The operators reserve the right to take legal action
+                                in the event of unsolicited advertising (such as spam emails).
+                            </p>
+                        </section>
+
+                        <p class="text-sm text-slate-500">
+                            For further legal details, please also review our <a class="text-sky-400 underline underline-offset-4 decoration-sky-500 decoration-2 transition hover:text-sky-300" href="privacy.html">Privacy Policy</a>.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -87,40 +184,48 @@
     <!-- Footer -->
     <footer class="bg-gray-900/50 py-6 mt-16">
         <div class="container mx-auto px-6 text-center text-slate-500">
-            <a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Back to main page</a>
-            <a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
-            <a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+                <a href="index.html" class="hover:text-sky-400 transition-colors duration-300">Back to main page</a>
+                <a href="impressum.html" class="hover:text-sky-400 transition-colors duration-300">Imprint</a>
+                <a href="privacy.html" class="hover:text-sky-400 transition-colors duration-300">Privacy Policy</a>
+            </div>
             <p class="mt-4">&copy; 2025 Kristof Flajsz. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="../js/language-toggle.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // --- Mobile Menu Toggle ---
+        document.addEventListener('DOMContentLoaded', () => {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+
+            // Toggle mobile navigation
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
-            
-            // Close mobile menu when a link is clicked
-            mobileMenu.addEventListener('click', (e) => {
-                if(e.target.tagName === 'A'){
+
+            // Close mobile menu when a link is activated
+            mobileMenu.addEventListener('click', (event) => {
+                if (event.target.tagName === 'A') {
                     mobileMenu.classList.add('hidden');
                 }
             });
-            // Close mobile menu when clicking a main nav link too (for smooth scrolling)
-            document.querySelectorAll('#header nav a').forEach(link => {
-                link.addEventListener('click', () => {
-                     if(!mobileMenu.classList.contains('hidden')){
-                        mobileMenu.classList.add('hidden');
-                     }
-                });
-            })
 
-            // --- Language Switcher ---
+            // Close mobile menu when primary navigation links are used
+            document.querySelectorAll('#header nav a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            const languageToggle = document.getElementById('language-toggle');
+
+            if (window.location.pathname.startsWith('/en')) {
+                languageToggle.checked = true;
+            }
+
             initializeLanguageToggle();
         });
     </script>
