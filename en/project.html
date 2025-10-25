@@ -52,33 +52,80 @@
     <!-- Main Content -->
     <main class="py-20 md:py-32">
         <section id="projects" class="container mx-auto px-6">
-            <div class="max-w-3xl mx-auto">
+            <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl font-bold mb-4 gradient-text">My Projects</h1>
-                <div class="w-24 h-1 bg-sky-500 mb-8 rounded"></div>
-                
-                <div class="space-y-12">
-                    
-                    <!-- Project Entry 1 -->
-                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-2xl font-semibold text-slate-100 mb-2">Creation of a virtual firewall using a NAS</h2>
-                        <p class="text-slate-400 mb-4">
-                            In this project, I set up a virtual firewall on a NAS platform to improve network security. The firewall was configured to monitor and control incoming and outgoing traffic, preventing unwanted access.
-                        </p>
-                        <a href="Projects/NAS mit Virtuelle Firewall/project.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-300">
-                            Learn more
-                        </a>
-                    </div>
+                <div class="w-24 h-1 bg-sky-500 mb-12 rounded"></div>
 
-                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-2xl font-semibold text-slate-100 mb-2">Vivaldi Browser Ad Blocker</h2>
-                        <p class="text-slate-400 mb-4">
-                            In this project, I created an ad blocker list for the Vivaldi browser to improve the user experience and block unwanted advertising.
-                        </p>
-                        <a href="Projects/Vivaldi_Browser_AdBlocker_lists/vivaldi.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-300">
-                            Learn more
-                        </a>
-                    </div>
+                <div class="space-y-10 text-slate-300">
+                    <article class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-xl shadow-black/20 space-y-6">
+                        <header class="space-y-3">
+                            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-300/90">
+                                Network &amp; Security
+                            </div>
+                            <h2 class="text-2xl font-semibold text-white">Building a virtual firewall with a NAS</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                Deploying a virtualized firewall on a NAS platform to tighten network security, isolate services, and maintain full control over inbound and outbound traffic.
+                            </p>
+                        </header>
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div class="rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Technologies</p>
+                                <ul class="mt-2 space-y-1 text-sm text-slate-300">
+                                    <li>Proxmox VE</li>
+                                    <li>pfSense firewall</li>
+                                    <li>VLAN management</li>
+                                </ul>
+                            </div>
+                            <div class="rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Highlights</p>
+                                <ul class="mt-2 space-y-1 text-sm text-slate-300">
+                                    <li>Segmentation of sensitive services</li>
+                                    <li>Advanced monitoring options</li>
+                                    <li>Automated backups</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="Projects/NAS mit Virtuelle Firewall/project.html" class="inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-2 text-sm font-semibold text-white transition hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
 
+                    <article class="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-8 shadow-xl shadow-black/20 space-y-6">
+                        <header class="space-y-3">
+                            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-300/90">
+                                Browser &amp; Web
+                            </div>
+                            <h2 class="text-2xl font-semibold text-white">Vivaldi Browser Ad Blocker</h2>
+                            <p class="leading-relaxed text-slate-400">
+                                Crafting a curated ad-blocking list for the Vivaldi browser to streamline browsing, protect privacy, and keep intrusive ads at bay.
+                            </p>
+                        </header>
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div class="rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Focus areas</p>
+                                <ul class="mt-2 space-y-1 text-sm text-slate-300">
+                                    <li>Optimised filter lists</li>
+                                    <li>Scheduled updates</li>
+                                    <li>Performance analysis</li>
+                                </ul>
+                            </div>
+                            <div class="rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Results</p>
+                                <ul class="mt-2 space-y-1 text-sm text-slate-300">
+                                    <li>Reduced loading times</li>
+                                    <li>Improved privacy</li>
+                                    <li>Consistent user experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="Projects/Vivaldi_Browser_AdBlocker_lists/vivaldi.html" class="inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-2 text-sm font-semibold text-white transition hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-950">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
